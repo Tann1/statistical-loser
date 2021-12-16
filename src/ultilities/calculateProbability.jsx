@@ -1,7 +1,7 @@
 import {binomialDistribution} from 'simple-statistics';
 
 
-//Caluates P(X >= x) = 1 - P(X < x) where x = numberOfSuccessfulEvents with n trails
+//Caluates P(X >= x) = 1 - P(X < x) where x = numberOfSuccessfulEvents with n trials
 const calucateProbability = (trials, numberOfSuccessfulEvents, probability) => {
   const result = binomialDistribution(trials, probability);
   let cumulativeResult = 0;
